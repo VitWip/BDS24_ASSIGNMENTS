@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib.pyplot 
+scipy.stats 
+geopandas
+altair
+vega_datasets
+streamlit 
+zipfile
+requests
