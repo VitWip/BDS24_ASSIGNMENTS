@@ -19,20 +19,7 @@ def load_data():
         
     # Defination of url-paths
     url1 = 'https://github.com/aaubs/ds-master/raw/main/data/assignments_datasets/KIVA/kiva_loans_part_0.csv.zip'
-    url2 = 'https://github.com/aaubs/ds-master/raw/main/data/assignments_datasets/KIVA/kiva_loans_part_1.csv.zip'
-    url3 = 'https://github.com/aaubs/ds-master/raw/main/data/assignments_datasets/KIVA/kiva_loans_part_2.csv.zip'
-
-    # Loading the urls into requests to download data
-
-    response1 = requests.get(url1)
-
-    response2 = requests.get(url2)
-
-    response3 = requests.get(url3)
-
-    # Saves the .zip data as files
-
-    with open("kiva_loans_part_0.csv.zip", "wb") as file:
+    
         file.write(response1.content)
 
     with open("kiva_loans_part_1.csv.zip", "wb") as file:
